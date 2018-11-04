@@ -1,4 +1,4 @@
-package com.shop.products;
+package com.shop.products.test.unit;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

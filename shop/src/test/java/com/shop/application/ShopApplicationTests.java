@@ -7,9 +7,9 @@ import org.junit.runners.Suite.SuiteClasses;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.shop.products.AllTestsForProduct;
-import com.shop.products.ProductCompareTest;
-import com.shop.products.ProductTest;
+import com.shop.products.test.unit.AllTestsForProduct;
+import com.shop.products.test.unit.ProductCompareTest;
+import com.shop.products.test.unit.ProductTest;
 
 
 @RunWith(SpringRunner.class)
