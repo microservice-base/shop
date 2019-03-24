@@ -1,4 +1,4 @@
-package com.shop.product.dao.test;
+package test.com.shop.product.dao;
 
 import java.util.ArrayList;
 import java.util.List;

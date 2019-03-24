@@ -1,4 +1,4 @@
-package com.shop.product.api.integration.test;
+package test.com.shop.product.api.integration;
 
 import org.assertj.core.api.Assertions;
 import org.json.JSONException;
