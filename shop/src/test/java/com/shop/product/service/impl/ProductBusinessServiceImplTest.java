@@ -1,4 +1,4 @@
-package test.com.shop.product.service.impl;
+package com.shop.product.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;

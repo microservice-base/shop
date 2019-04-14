@@ -1,4 +1,4 @@
-package test.com.shop.product.api;
+package com.shop.product.api;
 
 import java.util.ArrayList;
 import java.util.List;
