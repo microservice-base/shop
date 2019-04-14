@@ -28,6 +28,9 @@ cd shop/shop && ./gradlew build && cp build/libs/*.jar ./container/docker/app.ja
 
 ## yapılacaklar
 image dişarıya bir port üzerinden açılacak.(uygulamanını portu)
+
 image a bir isim verilecek çünkü sadece bir image id si oluşuyor (isim ile oluşmalı)
+
 container otomatik oluşmalıdır.
+
 container klasörü projenin bir üst klasörüne çıkartabilirim
