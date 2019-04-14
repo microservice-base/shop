@@ -23,6 +23,11 @@ git clone https://github.com/microservice-base/shop.git
 
 cd shop/shop && ./gradlew build && cp build/libs/*.jar ./container/docker/app.jar && cd container/docker/ && docker build .
 
+
+docker run -it -d image_id /bin/sh
+
+docker exec -it container_id /bin/sh
+
 ```
 
 
