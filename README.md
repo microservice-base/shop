@@ -28,7 +28,7 @@ docker run -p 8001:8001 -it -d --name shopproject openjdk:8-jdk-alpine
 
 docker ps
 
-docker exec -it container_id /bin/sh
+docker exec -it shopproject /bin/sh
 
 ```
 
