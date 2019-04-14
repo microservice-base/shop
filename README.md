@@ -26,6 +26,8 @@ cd shop/shop && ./gradlew build && cp build/libs/*.jar ./container/docker/app.ja
 
 docker run -it -d image_id /bin/sh
 
+docker ps
+
 docker exec -it container_id /bin/sh
 
 ```
