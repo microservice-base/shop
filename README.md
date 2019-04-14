@@ -24,7 +24,7 @@ git clone https://github.com/microservice-base/shop.git
 cd shop/shop && ./gradlew build && cp build/libs/*.jar ./container/docker/app.jar && cd container/docker/ && docker build .
 
 
-docker run -p 8080:80 -it -d image_id /bin/sh
+docker run -p 8001:8001 -it -d image_id /bin/sh
 
 docker ps
 
