@@ -14,7 +14,9 @@ curl --request GET http://localhost:8001/shop/prouductapi/products
 
 
 
-## docker image oluşturuyor
+## docker image oluşturmak
+
+Gradle yüklü olmalıdır.
 ```
 git clone https://github.com/microservice-base/shop.git
 
