@@ -2,16 +2,6 @@
 
 https://microservice-base.github.io/
 
-# API
-
-## ui
-
-http://localhost:8001/shop/swagger-ui.html
-
-## terminal
-
-curl --request GET http://localhost:8001/shop/prouductapi/products
-
 
 
 ## docker image oluşturmak
@@ -29,8 +19,18 @@ docker exec -it shopproject /bin/sh
 
 ```
 
+# API
+
+## ui
+
+http://localhost:8001/shop/swagger-ui.html
+
+## terminal
+
+curl --request GET http://localhost:8001/shop/prouductapi/products
+
 
 ## yapılacaklar
-image dişarıya bir port üzerinden açılacak.(uygulamanını portu)
+konteyner oluşturulurken otomatik dockerfile üzerinden port alabilr mi ?
 
 container klasörü projenin bir üst klasörüne çıkartabilirim
