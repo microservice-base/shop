@@ -35,8 +35,4 @@ docker exec -it shopproject /bin/sh
 ## yapılacaklar
 image dişarıya bir port üzerinden açılacak.(uygulamanını portu)
 
-image a bir isim verilecek çünkü sadece bir image id si oluşuyor (isim ile oluşmalı)
-
-container otomatik oluşmalıdır.
-
 container klasörü projenin bir üst klasörüne çıkartabilirim
