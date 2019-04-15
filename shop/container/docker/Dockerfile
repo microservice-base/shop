@@ -1,7 +1,7 @@
 FROM openjdk:8-jdk-alpine
 RUN mkdir -p /app
 ADD app.jar /app
-ADD run.sh run.sh 
-RUN chmod +x run.sh
+ADD app.sh app.sh 
+RUN chmod +x app.sh
 EXPOSE 8001
-CMD ["./run.sh"]
+CMD ["./app.sh"]
