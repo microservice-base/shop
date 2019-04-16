@@ -3,6 +3,10 @@
 https://microservice-base.github.io/
 
 
+## docker image link
+```
+docker pull keramiozsoy/image-shop/
+```
 
 ## docker image oluşturmak
 
