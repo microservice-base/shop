@@ -10,14 +10,11 @@ docker pull keramiozsoy/image-shop
 docker run -d --name project-shop -p 8001:8001 image-shop
 ```
 
-
-# API
-
-## ui
+## api ui
 
 http://localhost:8001/shop/swagger-ui.html
 
-## terminal
+## api terminal
 
 curl --request GET http://localhost:8001/shop/prouductapi/products
 
