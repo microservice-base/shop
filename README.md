@@ -5,9 +5,9 @@ https://microservice-base.github.io/
 
 ## docker image link
 ```
-docker pull keramiozsoy/image-shop
+docker pull keramiozsoy/image-shop:v1
 
-docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop
+docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:v1
 ```
 
 ## api ui
