@@ -9,7 +9,7 @@ docker pull keramiozsoy/image-shop:v1
 
 docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:v1
 
-$ git clone project
+$ git clone https://github.com/microservice-base/shop.git
 $ cd shop 
 $ docker build  -t image-shop  -f container/docker/Dockerfile .
 $ docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:latest
