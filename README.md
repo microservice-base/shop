@@ -18,7 +18,18 @@ $ docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:latest
 
 ## api swagger ui
 
-http://localhost:8001/shop/swagger-ui.html
+http://localhost:8001/shop/swagger-ui.html#/product-api
+
+## kubernetes ( minikube )
+```
+$  kubectl create deployment image-shop-deployment --image=keramiozsoy/image-shop
+$  kubectl expose deployment image-shop-deployment --type=LoadBalancer --port=8001
+
+
+$  kubectl delete service image-shop-deployment
+$  kubectl delete deployment image-shop-deployment
+
+```
 
 ## api terminal
 
