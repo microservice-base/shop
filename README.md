@@ -25,6 +25,7 @@ http://localhost:8001/shop/swagger-ui.html#/product-api
 $  kubectl create deployment image-shop-deployment --image=keramiozsoy/image-shop
 $  kubectl expose deployment image-shop-deployment --type=LoadBalancer --port=8001
 
+$  minikube service image-shop-deployment
 
 $  kubectl delete service image-shop-deployment
 $  kubectl delete deployment image-shop-deployment
