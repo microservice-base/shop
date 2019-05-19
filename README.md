@@ -16,7 +16,7 @@ $ docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:latest
 
 ```
 
-## api swagger ui
+## api swagger-ui
 
 http://localhost:8001/shop/swagger-ui.html#/product-api
 
