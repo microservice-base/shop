@@ -1,6 +1,6 @@
 # shop
 
-https://microservice-base.github.io/
+https://microservice-base.github.io
 
 
 ## docker image link
