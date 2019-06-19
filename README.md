@@ -3,7 +3,7 @@
 https://microservice-base.github.io
 
 
-## docker image link
+## docker image
 ```
 $ docker pull keramiozsoy/image-shop:latest
 
