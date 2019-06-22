@@ -14,8 +14,8 @@ RUN  cd $HOME/shop && \
 
 # FROM alpine:latest
 FROM openjdk:8-jdk-alpine
-RUN apk add -U tzdata
-RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+#RUN apk add -U tzdata
+#RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 COPY --from=builder /home/gradle/shop/build/libs/ .
 CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
