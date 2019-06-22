@@ -11,7 +11,7 @@ or
 
 $ git clone https://github.com/microservice-base/shop.git
 $ cd shop 
-$ docker build  -t image-shop  -f container/docker/Dockerfile .
+$ docker build --no-cache  -t image-shop  -f container/docker/Dockerfile .
 $ docker run -d --name project-shop -p 8001:8001 keramiozsoy/image-shop:latest
 
 ```
