@@ -20,7 +20,7 @@ COPY --from=builder /home/gradle/shop/shop/build/libs/ .
 COPY --from=builder /home/gradle/shop/container/observability/ .
 
 VOLUME /myvol
-RUN mv prometheus.yml /myvol
+RUN mv prometheus.yml myvol
 
 CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
