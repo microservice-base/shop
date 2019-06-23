@@ -18,10 +18,12 @@ FROM openjdk:8-jdk-alpine
 COPY --from=builder /home/gradle/shop/shop/build/libs/ .
 COPY --from=builder /home/gradle/shop/container/observability/ .
 
+VOLUME /myvol
+
+
 CMD ["/bin/echo", "Hello world"]
 
 
-#VOLUME /myvol
 
 #CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
