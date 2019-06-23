@@ -19,6 +19,7 @@ COPY --from=builder /home/gradle/shop/shop/build/libs/ .
 COPY --from=builder /home/gradle/shop/container/observability/ .
 
 VOLUME /myvol
+RUN cp prometheus.yml /myvol
 
 
 CMD ["/bin/echo", "Hello world"]
