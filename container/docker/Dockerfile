@@ -10,18 +10,18 @@ WORKDIR shop/shop
 #RUN ./gradlew build
 RUN gradle build 
 
-#CMD ["/bin/echo", "Hello world"]   
+CMD ["/bin/echo", "Hello world"]   
 
-#FROM alpine:latest
-FROM openjdk:8-jdk-alpine
-#RUN apk add -U tzdata
-#RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
-COPY --from=builder /home/gradle/shop/shop/build/libs/ .
-COPY --from=builder /home/gradle/shop/container/observability/ .
+ #FROM alpine:latest
+#FROM openjdk:8-jdk-alpine
+ #RUN apk add -U tzdata
+ #RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+#COPY --from=builder /home/gradle/shop/shop/build/libs/ .
+#COPY --from=builder /home/gradle/shop/container/observability/ .
 
-VOLUME /myvol
+#VOLUME /myvol
 
-CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
+#CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
 # RUN mkdir -p /app
 # ADD app.jar /app
