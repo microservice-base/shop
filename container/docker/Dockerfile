@@ -16,7 +16,7 @@ FROM openjdk:8-jdk-alpine
  #RUN apk add -U tzdata
  #RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 COPY --from=builder /home/gradle/shop/shop/build/libs/ .
-COPY --from=builder /home/gradle/shop/container/observability/ .
+COPY --from=builder /home/gradle/shop/container/observability/ /prometheusfiles
 
 
 
