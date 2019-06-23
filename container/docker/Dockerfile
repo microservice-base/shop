@@ -19,14 +19,13 @@ COPY --from=builder /home/gradle/shop/shop/build/libs/ .
 COPY --from=builder /home/gradle/shop/container/observability/ .
 
 VOLUME /myvol
-RUN cp prometheus.yml /myvol
 
 
-CMD ["/bin/echo", "Hello world"]
+#CMD ["/bin/echo", "Hello world"]
 
 
 
-#CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
 # RUN mkdir -p /app
 # ADD app.jar /app
