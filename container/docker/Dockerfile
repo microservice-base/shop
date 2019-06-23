@@ -1,22 +1,27 @@
 # FROM openjdk:8-jdk-alpine
-FROM gradle:alpine as builder
+FROM gradle:jdk8 as builder
 RUN printenv
 
-# WORKDIR /Users/ko/workspace/ws-eclipse/shop
+RUN git clone https://github.com/microservice-base/shop.git
 
-COPY --chown=gradle:gradle . $HOME
+WORKDIR shop/shop
 
-RUN echo $HOME
+#RUN ./gradlew build --refresh-dependencies
+#RUN ./gradlew build
+RUN gradle build 
 
-RUN  cd $HOME/shop && \
-    gradle build
-    
+#CMD ["/bin/echo", "Hello world"]   
 
-# FROM alpine:latest
+#FROM alpine:latest
 FROM openjdk:8-jdk-alpine
 #RUN apk add -U tzdata
 #RUN cp /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
-COPY --from=builder /home/gradle/shop/build/libs/ .
+COPY --from=builder /home/gradle/shop/shop/build/libs/ .
+COPY --from=builder /home/gradle/shop/container/observability/ .
+
+VOLUME /myvol
+RUN mv prometheus.yml /myvol
+
 CMD ["java", "-jar", "shop-0.0.1-SNAPSHOT.jar"]
 
 # RUN mkdir -p /app
