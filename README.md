@@ -20,6 +20,7 @@ $ docker run -d --name project-shop -p 8001:8001 image-shop:latest
 
 http://localhost:8001/shop/swagger-ui.html#/product-api
 
+
 ## kubernetes ( minikube )
 ```
 $  kubectl create deployment image-shop-deployment --image=keramiozsoy/image-shop
