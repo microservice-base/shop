@@ -36,7 +36,4 @@ $  kubectl delete deployment image-shop-deployment
 ## api terminal
 ```
 $  curl --request GET http://localhost:8001/shop/prouductapi/products
-```
-
-## yapılacaklar
-konteyner oluşturulurken otomatik dockerfile üzerinden port alabilr mi ?
+``
