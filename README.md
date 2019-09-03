@@ -18,7 +18,7 @@ $ docker run -d --name app-shop -p 8001:8001 image-shop:latest
 
 ## api swagger-ui
 
-http://localhost:8001/shop/swagger-ui.html#/product-api
+open http://localhost:8001/shop/swagger-ui.html#/product-api
 
 
 ## kubernetes ( minikube )
