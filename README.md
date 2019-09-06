@@ -3,6 +3,10 @@
 https://microservice-base.github.io
 
 
+## Contributing
+
+[Contributing guide](CONTRIBUTING.md).
+
 ## docker image
 ```
 $ docker pull keramiozsoy/image-shop:latest
