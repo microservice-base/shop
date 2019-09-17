@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping(value = "/")
 @ResponseBody
 @Controller
-public class IndexApi {
+public class ApplicationInit {
 
     @RequestMapping(value = "/", 
 			method = RequestMethod.GET,
