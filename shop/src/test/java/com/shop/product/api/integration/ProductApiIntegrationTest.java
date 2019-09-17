@@ -44,7 +44,7 @@ public class ProductApiIntegrationTest {
     product.setCode("001");
 
     /** Temp Data */
-    String url = createURLWithPort("/shop/productapi/save");
+    String url = createURLWithPort("/productapi/save");
     ResponseEntity<Product> entitySave = testRestTemplate.postForEntity(url, product,
         Product.class);
 
@@ -53,7 +53,7 @@ public class ProductApiIntegrationTest {
     headers.setContentType(MediaType.APPLICATION_JSON);
     HttpEntity<String> requestEntity = new HttpEntity<String>(inputNotEntity, headers);
 
-    String url2 = createURLWithPort("/shop/productapi/findByCode");
+    String url2 = createURLWithPort("/productapi/findByCode");
 
     ResponseEntity<Product> entity = testRestTemplate.postForEntity(url2, requestEntity,
         Product.class);
