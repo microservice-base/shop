@@ -6,6 +6,7 @@ RUN git clone https://github.com/microservice-base/shop.git
 
 WORKDIR shop/shop
 
+#RUN ./gradlew clean build --refresh-dependencies
 #RUN ./gradlew build --refresh-dependencies
 #RUN ./gradlew build
 RUN gradle build 
