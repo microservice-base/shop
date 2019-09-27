@@ -15,6 +15,8 @@ $ cd shop/shop/
 
 $ ./gradlew build  # no need install Gradle for this command.
 $ java -jar build/libs/shop-0.0.1-SNAPSHOT.jar
+$ open http://localhost:8001/
+$ open http://localhost:8001/swagger-ui.html
 
 $ ./gradlew javadoc # for looking all class and methods
 $ open build/docs/javadoc/index.html
