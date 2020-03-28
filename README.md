@@ -37,7 +37,7 @@ $ ./gradlew javadoc # for looking all class and methods
 $ open build/docs/javadoc/index.html
 ```
 
-## Contributing
+## contributing
 
 [Contributing guide](CONTRIBUTING.md).
 
