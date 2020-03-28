@@ -3,11 +3,26 @@
 https://microservice-base.github.io
 
 
-## Contributing
+## how to create project
 
-[Contributing guide](CONTRIBUTING.md).
+```
+Spring initializr
 
-## local
+ https://start.spring.io/ 
+
+project : gradle
+language : java
+spring boot : 2.0.6
+group : com.shop
+artifact : shop
+name : shop
+packaging : jar
+java version : 8
+dependencies : spring web
+```
+
+
+## how to run project
 
 ```
 $ git clone https://github.com/microservice-base/shop.git
@@ -21,6 +36,10 @@ $ open http://localhost:8001/swagger-ui.html
 $ ./gradlew javadoc # for looking all class and methods
 $ open build/docs/javadoc/index.html
 ```
+
+## Contributing
+
+[Contributing guide](CONTRIBUTING.md).
 
 ## docker image
 ```
