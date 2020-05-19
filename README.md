@@ -37,9 +37,6 @@ $ ./gradlew javadoc # for looking all class and methods
 $ open build/docs/javadoc/index.html
 ```
 
-## contributing
-
-[Contributing guide](CONTRIBUTING.md).
 
 ## docker image
 ```
@@ -75,3 +72,7 @@ $  kubectl delete deployment image-shop-deployment
 ```
 $  curl --request GET http://localhost:8001/prouductapi/products
 ```
+
+## contributing
+
+[Contributing guide](CONTRIBUTING.md).
